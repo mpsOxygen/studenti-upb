@@ -2,7 +2,7 @@ FROM python:3-alpine
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir gunicorn
+RUN pip install --no-cache-dir -r requirements.txt
 
 # RUN useradd -m -u 1000 app
 RUN adduser -u 1000 -D app
